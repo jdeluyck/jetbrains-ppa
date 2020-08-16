@@ -34,7 +34,7 @@ function git_push() {
         exit 1
     fi
 
-    git remote set-url origin "https://${gh_token}@github.com/jonasgroeger/jetbrains-ppa.git" > /dev/null 2>&1
+    git remote set-url origin "https://${gh_token}@github.com/jdeluyck/jetbrains-ppa.git" > /dev/null 2>&1
     git push --quiet --set-upstream origin master
 }
 
