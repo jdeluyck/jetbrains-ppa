@@ -10,7 +10,7 @@ S3_BUCKET="s3:jetbrains-ppa:"
 # licensing restrictions of the software it contains.
 COMP="main"
 
-GPG_KEY_ID="C647DF711B0CCC6A9F8769D0F3A767B5A6E8698A"
+GPG_KEY_ID="4E317DD331F621853D7D0E294C57F7B442CA12CF"
 
 # Create repo
 aptly repo create -config=aptly.conf -architectures="${ARCH}" -component="${COMP}" "${REPO}"
