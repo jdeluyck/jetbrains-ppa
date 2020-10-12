@@ -22,7 +22,7 @@ Currently, the following packages are supported and automatically updated using 
 To use it, enter the commands below, one by one. They download the correct GPG Key and add this repositories sources to your system sources.
 
 ```
-curl -s https://ppa-jetbrains.kcore.org/file/ppa-jetbrains//4C57F7B442CA12CF.pub.ascc | sudo apt-key add -
+curl -s https://ppa-jetbrains.kcore.org/file/ppa-jetbrains/4C57F7B442CA12CF.pub.ascc | sudo apt-key add -
 echo "deb https://ppa-jetbrains.kcore.org/file/ppa-jetbrains/ bionic main" | sudo tee /etc/apt/sources.list.d/jetbrains-ppa.list > /dev/null
 sudo apt-get update
 ```
