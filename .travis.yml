@@ -5,6 +5,9 @@ before_install:
 - sudo apt-get update
 - sudo apt-get install curl jq sed git aptly
 - gem install fpm
+- openssl aes-256-cbc -K $encrypted_4C57F7B442CA12CF_key -iv $encrypted_4C57F7B442CA12CF_iv -in jetbrains-ppa.gpg.enc -out jetbrains-ppa.gpg -d
+- gpg --import jetbrains-ppa.gpg
+- gpg --list-keys
 script:
 - "./update-packages"
 - "./publish-to-s3"
