@@ -1,8 +1,8 @@
 # Inofficial Jetbrains PPA
 
-This is the inofficial Jetbrains PPA which you can use to get the latest and greatest products from Jetbrains.
+This is a fork of the inofficial Jetbrains PPA which you can use to get the latest and greatest products from Jetbrains.
 
-Currently, the following packages are supported and automatically updated using [TravisCI](https://travis-ci.org/JonasGroeger/jetbrains-ppa).
+Currently, the following packages are supported and automatically updated using [TravisCI](https://travis-ci.org/jdeluyck/jetbrains-ppa).
 
 * CLion `clion`
 * DataGrip `datagrip`
@@ -33,17 +33,11 @@ To install for example IntelliJ Idea Ultimate, you can now run
 sudo apt-get install intellij-idea-ultimate
 ```
 
-If you still have the sources from [my Launchpad PPA](https://launchpad.net/~jonas-groeger/+archive/ubuntu/jetbrains), please run:
-
-```
-sudo rm -f /etc/apt/sources.list.d/jetbrains.list{,.distUpgrade,.save}
-```
-
-If you have any issues, please [create a GitHub issue](https://github.com/JonasGroeger/jetbrains-ppa/issues/new).
+If you have any issues, please [create a GitHub issue](https://github.com/jdeluyck/jetbrains-ppa/issues/new).
 
 ## I want another package
 
-If you want a package for another Jetbrains product please [create a GitHub issue](https://github.com/JonasGroeger/jetbrains-ppa/issues/new).
+If you want a package for another Jetbrains product please [create a GitHub issue](https://github.com/jdeluyck/jetbrains-ppa/issues/new).
 
 ## Why not use the [official snap packages](https://snapcraft.io/search?q=jetbrains)?
 
@@ -71,4 +65,5 @@ However, none have continuous delivery or provide a wide range of JetBrains prod
 
 ---
 
-Maintained by Jonas Gröger. Automatically updated by [TravisCI](https://travis-ci.org/JonasGroeger/jetbrains-ppa).
+This fork is maintained by Jonas Gröger. Automatically updated by [TravisCI](https://travis-ci.org/jdeluyck/jetbrains-ppa).
+Original is maintained by [Jonas Gröger](https://github.com/JonasGroeger/jetbrains-ppa)..
