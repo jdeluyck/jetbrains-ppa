@@ -22,8 +22,8 @@ Currently, the following packages are supported and automatically updated using 
 To use it, enter the commands below, one by one. They download the correct GPG Key and add this repositories sources to your system sources.
 
 ```
-curl -s https://s3.eu-central-1.amazonaws.com/jetbrains-ppa/0xA6E8698A.pub.asc | sudo apt-key add -
-echo "deb http://jetbrains-ppa.s3-website.eu-central-1.amazonaws.com bionic main" | sudo tee /etc/apt/sources.list.d/jetbrains-ppa.list > /dev/null
+curl -s https://ppa-jetbrains.kcore.org/file/ppa-jetbrains//4C57F7B442CA12CF.pub.ascc | sudo apt-key add -
+echo "deb https://ppa-jetbrains.kcore.org/file/ppa-jetbrains/ bionic main" | sudo tee /etc/apt/sources.list.d/jetbrains-ppa.list > /dev/null
 sudo apt-get update
 ```
 
@@ -66,4 +66,5 @@ However, none have continuous delivery or provide a wide range of JetBrains prod
 ---
 
 This fork is maintained by Jonas Gröger. Automatically updated by [TravisCI](https://travis-ci.org/jdeluyck/jetbrains-ppa).
-Original is maintained by [Jonas Gröger](https://github.com/JonasGroeger/jetbrains-ppa)..
+
+Original is maintained by [Jonas Gröger](https://github.com/JonasGroeger/jetbrains-ppa).

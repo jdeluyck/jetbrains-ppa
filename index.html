@@ -32,10 +32,10 @@
 
     <body>
         <h1>Inofficial Jetbrains PPA</h1>
-        <p>This is the inofficial Jetbrains PPA which you can use to get the latest and greatest products from Jetbrains.</p>
+        <p>This is the unofficial Jetbrains PPA which you can use to get the latest and greatest products from Jetbrains.</p>
 
         <p>
-            Currently, the following packages are supported and automatically updated using <a href="https://travis-ci.org/JonasGroeger/jetbrains-ppa">TravisCI</a>.
+            Currently, the following packages are supported and automatically updated using <a href="https://travis-ci.org/jdeluyck/jetbrains-ppa">TravisCI</a>.
             <ul>
                 <li>CLion <span class="code">clion</span></li>
                 <li>DataGrip <span class="code">datagrip</span></li>
@@ -54,21 +54,20 @@
 
 
         <p>To use it, enter the commands below, one by one. They download the correct GPG Key and add this repositories sources to your system sources.</p>
-        <pre>curl -s https://s3.eu-central-1.amazonaws.com/jetbrains-ppa/0xA6E8698A.pub.asc | sudo apt-key add -
-echo "deb http://jetbrains-ppa.s3-website.eu-central-1.amazonaws.com bionic main" | sudo tee /etc/apt/sources.list.d/jetbrains-ppa.list &gt; /dev/null
+        <pre>curl -s https://ppa-jetbrains.kcore.org/file/ppa-jetbrains//4C57F7B442CA12CF.pub.asc | sudo apt-key add -
+echo "deb https://ppa-jetbrains.kcore.org/file/ppa-jetbrains/ bionic main" | sudo tee /etc/apt/sources.list.d/jetbrains-ppa.list &gt; /dev/null
 sudo apt-get update</pre>
 
         <p>To install for example IntelliJ Idea Ultimate, you can now run</p>
         <pre>sudo apt-get install intellij-idea-ultimate</pre>
 
-        <p>If you still have the sources from my <a href="https://launchpad.net/~jonas-groeger/+archive/ubuntu/jetbrains">Launchpad PPA</a>, please run:</p>
-        <pre>sudo rm -f /etc/apt/sources.list.d/jetbrains.list{,.distUpgrade,.save}</pre>
-
-        <p>If you have any issues, please report at <a href="https://github.com/JonasGroeger/jetbrains-ppa/issues/new">github.com/jonasgroeger/jetbrains-ppa</a>.</p>
+        <p>If you have any issues, please report at <a href="https://github.com/jdeluyck/jetbrains-ppa/issues/new">github.com/jdeluyck/jetbrains-ppa</a>.</p>
 
         <hr>
 
-        <p class="small">Maintained by <a href="http://jonasgroeger.de"></a>Jonas Gröger. Automatically updated by <a href="https://travis-ci.org/JonasGroeger/jetbrains-ppa">TravisCI</a>.</p>
+        <p class="small">Maintained by <a href="http://github.com/jdeluyck"></a>Jan De Luyck. Automatically updated by <a href="https://travis-ci.org/jdeluyck/jetbrains-ppa">TravisCI</a>.</p>
+
+        <p class="small">Original was maintained by <a href="http://jonasgroeger.de"></a>Jonas Gröger. Automatically updated by <a href="https://travis-ci.org/JonasGroeger/jetbrains-ppa">TravisCI</a>.</p>
     </body>
 
 </html>
