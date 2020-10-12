@@ -1,6 +1,6 @@
-# Inofficial Jetbrains PPA
+# Unofficial Jetbrains PPA
 
-This is a fork of the inofficial Jetbrains PPA which you can use to get the latest and greatest products from Jetbrains.
+This is a fork of the unofficial Jetbrains PPA which you can use to get the latest and greatest products from Jetbrains.
 
 Currently, the following packages are supported and automatically updated using [TravisCI](https://travis-ci.org/jdeluyck/jetbrains-ppa).
 
