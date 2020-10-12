@@ -38,7 +38,7 @@ fpm -t deb \
     --vendor "https://www.jetbrains.com/" \
     --url "https://www.jetbrains.com/" \
     --version "${VERSION}" \
-    --depends "lib32ncurses5 | libncurses5" \
+    --depends "lib32ncurses6 | libncurses6" \
     --depends "default-jdk | oracle-java7-installer | oracle-java8-installer" \
     --depends "libc6-i386" \
     --depends "lib32stdc++6" \
